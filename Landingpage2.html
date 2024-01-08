@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/rider.css">
+<link rel="stylesheet" href="css/style1.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: auto;
+  margin: auto;
+  background-color: #ffffff;
+  height: auto;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #020202;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: rgb(255, 255, 255);
+  padding: 16px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgb(180, 167, 167);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.active {
+  background-color: #212b20;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a><img src="images/Untitled_Project_V3.gif" height="17rem" width="30rem" alt="logo"></a>
+  <div id="myLinks">
+        <div class="avatar">
+          <img src="images/avatar.png" height="100rem" width="100rem" alt="avatar" />
+        </div>
+        <div class="h1-color"><h1 class="title">Sharad Thing </h1> </div>
+    
+    <a href="#news">View Profile</a>
+    <a href="#contact">Help & Support</a>
+    <a href="#about">Setting & Privacy</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="index.html">Logout</a>
+   
+  </div>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
+
+    <br><br><br><br>
+
+    <section>
+      
+        <div class="onoff">
+            
+            <input id="toggleSwitch" class="toggle" type="checkbox" role="switch" name="toggle" value="on" checked>
+        <label for="toggleSwitch" class="slot">
+          <span  class="slot__label">OOffline</span>
+          <span class="slot__label">OOnline</span>
+        </label>
+        <div class="curtain"></div>
+        </div>
+        </section>
+
+
+      
+          <div class="h2_slogan">
+            <div></div>
+        <h2 class="h2_slogan">तपाई Online हुनुभयो</h2>
+  <h2>🇳🇵</h2>
+  <h2>.</h2>
+  <br> <br>
+  <div>
+    <img  src="images/auto_light.png" height="150rem" width="200rem" alt="logo">
+  </div>
+    </div>
+    <br>
+          
+         </div>
+         
+         <style> 
+         .h2_slogan{
+          text-align: center; 
+        }
+        </style>
+        <main class="container">
+          <section class="mainHeader">
+              <center><h1>Pick your auto-station</h1></center>
+          </section>
+          <section>
+              <!-- Search functionality section -->
+              <div class="search-container">
+                  <input type="text" placeholder="Search auto-station..." class="search-input">
+                  <div class="search-function">
+                     <select class="search-select">
+                          <option value="all">All</option>
+                          <option value="hetauda">Hetauda</option>
+                          <option value="kathmandu">Kathmandu</option>
+                          <option value="pokhara">Pokhara</option>
+                          <option value="biratnagar">Biratnagar</option>
+                          <option value="dharan">Dharan</option>
+                          <option value="birgunj">Birgunj</option>
+                          <option value="itahari">Itahari</option>
+                      </select>
+                      <button class="search-button">Select</button> 
+                  </div>    
+              </div>
+              <section class="driverList">
+                <div class="driver">
+                    <div class="driver-image">
+                        <img src="images/location.png" alt="1">
+                    </div>
+                    <div class="driver-info">
+                      <h3>Driver Name</h3>
+                      <h4>Your current auto-station is set to </h4><h3> <span style="color: rgb(30, 229, 255);">auto-Station </h3></span> </h4>
+                  </div>
+              </div>
+                    </section>
+          </section>
+      </main>
+      
+      
+      <!-- Go To Top button -->
+      <button onclick="topFunction()" id="goToTop" title="Go to top"><img src="images/up.png" height="15" width="15" alt="up"></button>
+      <script>
+          const hamburger = document.querySelector('.hamburger');
+          const navLinks = document.querySelector('.contactList');
+          const links = document.querySelectorAll('.contactList li');
+  
+  
+          hamburger.addEventListener("click", mobileMenu);
+  
+          function mobileMenu() {
+              hamburger.classList.toggle("active");
+              navLinks.classList.toggle("active");
+          }
+          const navLink = document.querySelectorAll(".nav-link");
+  
+          navLink.forEach(n => n.addEventListener("click", closeMenu));
+  
+          function closeMenu() {
+              hamburger.classList.remove("active");
+              navLinks.classList.remove("active");
+          }
+  
+          // Get the button
+          let goToTop = document.getElementById("goToTop");
+  
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+  
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  goToTop.style.display = "block";
+              } else {
+                  goToTop.style.display = "none";
+              }
+          }
+  
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }
+      </script>
+ 
+          
+
+<!-- Toogle button -->
+
+<style>
+              
+        
+  .popup-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+  }
+
+  .popup-box {
+      background: #1fa039;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+  }
+
+  .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="popup-container" id="popupContainer">
+<div class="popup-box">
+  <p>Are you sure you want to go Offline?</p>
+  <button class="btn" onclick="navigateToNextPage()">Yes</button>
+  <button class="btn" onclick="navigateToSamePage()">No</button>
+</div>
+</div>
+
+
+
+<script>
+function openPopup() {
+  document.getElementById('popupContainer').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popupContainer').style.display = 'none';
+}
+
+function navigateToNextPage() {
+  // Replace this line with the actual URL of the next page
+  window.location.href = 'landingpage.html';
+}
+function navigateToSamePage() {
+  // Replace this line with the actual URL of the next page
+  window.location.href = 'Landingpage2.html';
+}
+</script>
+
+<script defer>
+document.addEventListener('DOMContentLoaded', function () {
+const toggleSwitch = document.getElementById('toggleSwitch');
+
+toggleSwitch.addEventListener('change', function () {
+if (toggleSwitch.checked) {
+document.getElementById('popupContainer').style.display = 'flex';
+} else {
+document.getElementById('popupContainer').style.display = 'flex';
+}
+});
+});
+</script>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- Toogle<script src="riderscript.js"></script> button -->
+
+</body>
+
+</html>
