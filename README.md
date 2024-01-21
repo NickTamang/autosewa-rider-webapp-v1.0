@@ -7,3 +7,8 @@ USER APP- Developed by Salon Ghalan Tamang/ Barun Gurung
 My collegue SALON GHALAN TAMANG (https://github.com/SalonTamang) and Barun Gurung (https://github.com/BarunGurung00) is helpign me in this project with USER APP.
 
 The App is in Development Stage as of now with overall 80% of work because of University Assigments/Lectures and Classes. 
+Live Demo: https://sharadcoding.github.io/web-app2/
+Note: You can access the login by hovering the mouse pointer bit left side of the login button and click it.
+
+
+Find me on Linkedin if you want to connect with me: https://www.linkedin.com/in/sharadthing/?originalSubdomain=uk
